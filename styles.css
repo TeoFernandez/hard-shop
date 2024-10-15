@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+/* Estilos generales para pantallas grandes */
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 0.1em; /* Espacio a la izquierda */
+}
+
+#logo {
+    width: 150px;
+    margin-right: 0px; /* Espacio entre logo y título */
+}
+
+header h1 {
+    margin-left: 0px;
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 1em;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Estilos responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 1em;
+    }
+
+    #logo {
+        width: 120px; /* Ajustar el tamaño del logo en pantallas pequeñas */
+        margin-bottom: 0.5em; /* Añadir espacio debajo del logo */
+    }
+
+    header h1 {
+        margin-left: 0;
+        font-size: 1.8rem; /* Reducir el tamaño del título */
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+        margin: 0.5em 0;
+    }
+}
+
+/* Estilos para pantallas extra pequeñas, como móviles */
+@media (max-width: 480px) {
+    #logo {
+        width: 100px; /* Logo más pequeño */
+    }
+
+    header h1 {
+        font-size: 1.5rem; /* Reducir aún más el tamaño del título */
+    }
+
+    nav li {
+        margin: 0.3em 0; /* Menos espacio entre enlaces */
+    }
+}
+
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1em;
+}
+
+.product-item {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 1em;
+    margin: 1em;
+    width: 200px;
+    text-align: center;
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.price {
+    font-weight: bold;
+    color: #333;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+sobre_nosotros{
+    margin: 20px auto; /* Centra el contenido */
+    padding: 20px; /* Espaciado interno */
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
